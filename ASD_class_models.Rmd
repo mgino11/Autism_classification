@@ -1,0 +1,27 @@
+---
+title: "ASD Classification"
+output: html_notebook
+---
+
+## Packages
+
+```{r}
+library(tidyverse)
+library(skimr)
+library(tinytex)
+library(e1071)
+library(ggthemes)
+library(caret)
+library(tidymodels)
+```
+
+## Dataset
+
+```{r}
+
+adult_asd <- read_csv("Dataset/adult_asd.csv")
+```
+
+```{r}
+skim_without_charts(adult_asd)
+```
